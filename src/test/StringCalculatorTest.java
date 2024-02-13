@@ -20,4 +20,8 @@ public class StringCalculatorTest {
     public void testAnyAmountOfNumbers() {
         assertEquals(15, StringCalculator.add("1,2,3,4,5"));
     }
+    @Test
+    public void testNewLinesBetweenNumbers() {
+        assertEquals(6, StringCalculator.add("1\n2,3"));
+    }
 }
